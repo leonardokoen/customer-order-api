@@ -2,13 +2,13 @@
 
 A Rest API That implements Customer & Order CRUD functionalities. This project is written in C# 10 and .NET 6. I have used Clean Architecture & Domain Driven Design. I have also applied Entity Framework,Repository Pattern and Unit Of Work Pattern and CIQR pattern.
 
-![ca](Pictures\CleanArchitecture.png)
+![ca](CleanArchitecture.png)
 
 ## Usage
 The usage of this is to perform basic CRUD functionalities on Customers and Orders. You can ```Add``` / ```Update``` / ```Delete``` ```Customers```. A ```Customer``` can add ```Order``` and see the history of his ```Orders```.
 
 ## Domain Layer
-![schema](Pictures\schema.png)
+![schema](schema.png)
 
 The above Entity-Relationship Diagram describes the ```Entities``` in the ```Domain Layer``` and the ```Relationships``` between them.
 
