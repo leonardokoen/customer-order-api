@@ -1,0 +1,44 @@
+  {
+    "firstName": "Alice",
+    "lastName": "Smith",
+    "email": "alice.smith@example.com",
+    "password": "P@ssw0rd123",
+    "address": "123 Main St",
+    "postalCode": "12345"
+  }
+
+  {
+    "firstName": "Bob",
+    "lastName": "Johnson",
+    "email": "bob.johnson@example.com",
+    "password": "SecurePass456",
+    "address": "456 Elm Ave",
+    "postalCode": "67890"
+  }
+
+  {
+    "firstName": "Charlie",
+    "lastName": "Davis",
+    "email": "charlie.davis@example.com",
+    "password": "Ch@rl13Pa$$",
+    "address": "789 Oak Rd",
+    "postalCode": "54321"
+  }
+
+  {
+    "firstName": "David",
+    "lastName": "Wilson",
+    "email": "david.wilson@example.com",
+    "password": "D@v1dP@ssw0rd",
+    "address": "101 Pine St",
+    "postalCode": "98765"
+  }
+
+  {
+    "firstName": "Eva",
+    "lastName": "Brown",
+    "email": "eva.brown@example.com",
+    "password": "Br0wnEva#",
+    "address": "222 Cedar Ave",
+    "postalCode": "13579"
+  }

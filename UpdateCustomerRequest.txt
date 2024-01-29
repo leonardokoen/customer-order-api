@@ -1,0 +1,29 @@
+{
+  "previousEmail": "alice.smith@example.com",
+  "firstName": "Alice",
+  "lastName": "Doe",
+  "email": "alice.doe@example.com",
+  "password": "NewPass123",
+  "address": "123 Oak St",
+  "postalCode": "54321"
+}
+
+{
+  "previousEmail": "bob.johnson@example.com",
+  "firstName": "Bobby",
+  "lastName": "Johnson",
+  "email": "bobby.johnson@example.com",
+  "password": "NewSecure789",
+  "address": "789 Cedar Ave",
+  "postalCode": "98765"
+}
+
+{
+  "previousEmail": "charlie.davis@example.com",
+  "firstName": "Charlie",
+  "lastName": "Davis",
+  "email": "newemail@example.com",
+  "password": "Ch@rliePa$$",
+  "address": "456 Elm Rd",
+  "postalCode": "24680"
+}

@@ -5,6 +5,7 @@ namespace CustomerOrder.Application.Common.Interfaces.Repositories
 {
     public interface IOrderRepository : IRepository<Order>
     {
+        IQueryable<Order> GetAll();
 
     }
 }

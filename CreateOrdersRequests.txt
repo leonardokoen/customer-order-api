@@ -1,0 +1,47 @@
+{
+  "email": "alice.doe@example.com",
+  "productNames": ["banana", "apple", "cherry"],
+  "itemQuantity": [3, 2, 1]
+}
+
+{
+  "email": "alice.doe@example.com",
+  "productNames": ["banana", "cucumber", "cherry", "apple"],
+  "itemQuantity": [4, 7, 5, 3]
+}
+
+{
+  "email": "alice.doe@example.com",
+  "productNames": ["apple", "pineapple", "lemon"],
+  "itemQuantity": [5, 2, 3]
+}
+
+{
+  "email": "alice.doe@example.com",
+  "productNames": ["banana", "cucumber", "cherry"],
+  "itemQuantity": [3, 6, 4]
+}
+
+{
+  "email": "bobby.johnson@example.com",
+  "productNames": ["apple", "cucumber", "pineapple"],
+  "itemQuantity": [5, 2, 3]
+}
+
+{
+  "email": "newemail@example.com",
+  "productNames": ["cherry", "cucumber", "lemon"],
+  "itemQuantity": [2, 4, 6]
+}
+
+{
+  "email": "david.wilson@example.com",
+  "productNames": ["banana", "cucumber", "lemon"],
+  "itemQuantity": [3, 7, 2]
+}
+
+{
+  "email": "eva.brown@example.com",
+  "productNames": ["apple", "cherry", "pineapple"],
+  "itemQuantity": [4, 1, 5]
+}
