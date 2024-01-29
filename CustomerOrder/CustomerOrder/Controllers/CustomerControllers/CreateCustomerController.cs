@@ -24,7 +24,7 @@ namespace CustomerOrder.Api.Controllers.Customer
         [HttpPost("CreateCustomer")]
         public async Task<IActionResult> CreateCustomer(CreateCustomerRequest request)
         {
-            var command = new CreateCustomerCommand(request.FirstName, request.LastName, request.Address, request.PostalCode, request.Email, request.Password);
+            var command = new CreateCustomerCommand(request.FirstName, request.LastName, request.Email, request.Password, request.Address, request.PostalCode);
             CreateCustomerResult createCustomerResult = await _mediator.Send(command);
             var response = new CreateCustomerResponse(createCustomerResult.Message, createCustomerResult.FirstName, createCustomerResult.LastName, createCustomerResult.Email);
             return Ok(response);

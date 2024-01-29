@@ -1,9 +1,7 @@
-﻿using CustomerOrder.Application.Common.Interfaces.Repositories;
-using CustomerOrder.Application.Common.Interfaces;
+﻿using CustomerOrder.Application.Common.Interfaces;
 using CustomerOrder.Application.Services.OrderServices.Common;
 using CustomerOrder.Domain.Entities;
 using MediatR;
-using System.Xml.Linq;
 
 
 namespace CustomerOrder.Application.Services.OrderServices.Commands.CreateOrder
