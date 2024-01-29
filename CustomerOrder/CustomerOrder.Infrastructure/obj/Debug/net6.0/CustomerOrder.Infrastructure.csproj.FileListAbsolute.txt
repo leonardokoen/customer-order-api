@@ -1,0 +1,17 @@
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\bin\Debug\net6.0\CustomerOrder.Infrastructure.deps.json
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\bin\Debug\net6.0\CustomerOrder.Infrastructure.dll
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\bin\Debug\net6.0\CustomerOrder.Infrastructure.pdb
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\bin\Debug\net6.0\CustomerOrder.Application.dll
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\bin\Debug\net6.0\CustomerOrder.Domain.dll
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\bin\Debug\net6.0\CustomerOrder.Application.pdb
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\bin\Debug\net6.0\CustomerOrder.Domain.pdb
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\obj\Debug\net6.0\CustomerOrder.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\obj\Debug\net6.0\CustomerOrder.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\obj\Debug\net6.0\CustomerOrder.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\obj\Debug\net6.0\CustomerOrder.Infrastructure.AssemblyInfo.cs
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\obj\Debug\net6.0\CustomerOrder.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\obj\Debug\net6.0\CustomerOrder.Infrastructure.csproj.CopyComplete
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\obj\Debug\net6.0\CustomerOrder.Infrastructure.dll
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\obj\Debug\net6.0\refint\CustomerOrder.Infrastructure.dll
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\obj\Debug\net6.0\CustomerOrder.Infrastructure.pdb
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Infrastructure\obj\Debug\net6.0\ref\CustomerOrder.Infrastructure.dll

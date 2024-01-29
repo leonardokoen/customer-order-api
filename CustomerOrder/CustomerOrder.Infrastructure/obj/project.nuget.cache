@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "BSGHxBrfdmS+ayAzeC/sox96BcKhCa1HgauJ3pMYSTHKTpuiYZaavz/FvsIU7vM7wq2p07gPG90NOF8xQdH+tQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leonardo.cohen\\Desktop\\training\\CustomerOrdersApi\\CustomerOrder\\CustomerOrder.Infrastructure\\CustomerOrder.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leonardo.cohen\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\leonardo.cohen\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\leonardo.cohen\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

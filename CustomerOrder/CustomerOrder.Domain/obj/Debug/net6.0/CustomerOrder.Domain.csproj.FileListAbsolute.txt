@@ -1,0 +1,11 @@
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Domain\bin\Debug\net6.0\CustomerOrder.Domain.deps.json
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Domain\bin\Debug\net6.0\CustomerOrder.Domain.dll
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Domain\bin\Debug\net6.0\CustomerOrder.Domain.pdb
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Domain\obj\Debug\net6.0\CustomerOrder.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Domain\obj\Debug\net6.0\CustomerOrder.Domain.AssemblyInfoInputs.cache
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Domain\obj\Debug\net6.0\CustomerOrder.Domain.AssemblyInfo.cs
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Domain\obj\Debug\net6.0\CustomerOrder.Domain.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Domain\obj\Debug\net6.0\CustomerOrder.Domain.dll
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Domain\obj\Debug\net6.0\refint\CustomerOrder.Domain.dll
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Domain\obj\Debug\net6.0\CustomerOrder.Domain.pdb
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Domain\obj\Debug\net6.0\ref\CustomerOrder.Domain.dll
