@@ -40,6 +40,7 @@ namespace CustomerOrder.Application.Services.CustomerServices.Commands.UpdateCus
                 PostalCode = command.PostalCode
             };
             _unitOfWork.Customer.Update(updatedCustomer, customer.Id);
+            await _unitOfWork.Commit();
             return new UpdateCustomerResult("Customer has been successfully updated.", command.PreviousEmail);
         }
     }

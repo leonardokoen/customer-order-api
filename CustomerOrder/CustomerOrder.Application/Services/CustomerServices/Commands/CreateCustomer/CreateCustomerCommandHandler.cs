@@ -25,7 +25,7 @@ namespace CustomerOrder.Application.Services.CustomerServices.Commands.CreateCus
                 };
 
                 _unitOfWork.Customer.Add(customer);
-
+                await _unitOfWork.Commit();
                 return new CreateCustomerResult("Customer Creation was Succesful.", command.FirstName, command.LastName, command.Email);
             }
 

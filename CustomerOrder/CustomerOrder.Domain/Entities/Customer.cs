@@ -2,7 +2,7 @@
 
 namespace CustomerOrder.Domain.Entities
 {
-    public class Customer
+    public class Customer : IIdentifiable 
     {
         [Key]
         public Guid Id { get; set; } = Guid.NewGuid();

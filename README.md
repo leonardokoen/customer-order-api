@@ -1,6 +1,6 @@
 # Customer-Order-Rest-Api
 
-A Rest API That implements Customer & Order CRUD functionalities. This project is written in C# 10 and .NET 6. I have used Clean Architecture & Domain Driven Design. I have also applied Entity Framework,Repository Pattern and Unit Of Work Pattern and CQRS pattern.
+A Rest API That implements Customer & Order CRUD functionalities. This project is written in C# 10 and .NET 6 & MSSql. I have used Clean Architecture & Domain Driven Design. I have also applied Entity Framework,Repository Pattern and Unit Of Work Pattern and CQRS pattern.
 
 ![ca](CleanArchitecture.png)
 
@@ -14,8 +14,8 @@ The above Entity-Relationship Diagram describes the ```Entities``` in the ```Dom
 
 CUSTOMER 
 ```C#
- public class Customer
- {
+public class Customer
+{
     [Key]
     public Guid Id { get; set; } = Guid.NewGuid();
     public string Name { get; set; } = null!;
@@ -24,26 +24,21 @@ CUSTOMER
     public string Password { get; set; } = null!;
     public string Address { get; set; } = null!;
     public string PostalCode { get; set; } = null!;
- }
+}
 ```
 ORDER
 ```C#
+
 public class Order
 { 
     [Key]
     public Guid Id { get; set; } = Guid.NewGuid();
-
     [ForeignKey("Customer")]
     public Guid CustomerId { get; set; }
-
-    public List<Guid> ItemIds { get; set; } = null!;
-
-    public List<int> Quantity { get; set; } = null!;
-
     public float TotalCost { get; set; }
-
     public DateTime OrderDate { get; set; } = DateTime.Now;
 }
+
 ```
 ITEM
 ```C#
@@ -51,11 +46,11 @@ public class Item
 {
     [Key]
     public Guid Id { get; set; } = Guid.NewGuid();
-
+    [ForeignKey("Order")]
     public Guid OrderId { get; set; }
-
-    public Product? Product { get; set; }
-
+    [ForeignKey("Product")]
+    public Guid ProductId { get; set; }
+    public Product Product { get; set; }
     public int Quantity { get; set; } = 0;
 }
 ```
@@ -65,14 +60,12 @@ public class Product
 {
     [Key]   
     public Guid Id { get; set; } = Guid.NewGuid();
-
     public string Name { get; set; } = null!;
-
     public float Price { get; set; } = 0.0f;
 }
 ```
 ## Database
-I made an in memory implemetation. Everything, is saved in memory if you stop running the project all data will be lost.  
+I have used MSSQL to store data. Everything in the database was accessed created etc. through Entity Framework.  
 
 ## Infrastracture Layer
 In this layer all Repositories are implemented. This layer handles every connection to database and handles Insert, Read, Update, Delete.
@@ -170,8 +163,6 @@ By building and running the project, swagger will pop up. All the endpoints are 
     ```
 
 ## Further Implemetations
-
-- Use MSSql RDBMS
 - Dockerize Project and MSSql
 - Create Unit Tests for every layer
 - Create End-to-End tests.

@@ -21,7 +21,9 @@ namespace ProductOrder.Application.Services.ProductServices.Commands
                     Price = command.Prices[i]
                 };
                 _unitOfWork.Product.Add(product);
+                
             }
+            await _unitOfWork.Commit();
             return new CreateProductResult("Product Creation was Succesful.");
         }
     }

@@ -6,9 +6,11 @@ namespace CustomerOrder.Infrastructure.Repositories
 {
     public class OrderRepository : GenericRepository<Order>, IOrderRepository
     {
+        public OrderRepository(CustomerOrderDbContext dbContext) : base(dbContext){}
+
         public IQueryable<Order> GetAll()
         {
-            return _entities.AsQueryable();
+            return _dbContext.Set<Order>();
         }
     }
 }

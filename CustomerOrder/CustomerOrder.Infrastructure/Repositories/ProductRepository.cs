@@ -6,9 +6,11 @@ namespace CustomerOrder.Infrastructure.Repositories
 {
     public class ProductRepository : GenericRepository<Product>, IProductRepository
     {
+        public ProductRepository(CustomerOrderDbContext dbContext) : base(dbContext) {}
+
         public Product? GetProductByName(string productName)
         {
-           return _entities.FirstOrDefault(e => ((dynamic)e).Name == productName);
+           return _dbContext.Set<Product>().FirstOrDefault(e => e.Name == productName);
         }
     }
 }

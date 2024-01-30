@@ -2,6 +2,8 @@
 using CustomerOrder.Application.Services.OrderServices.Common;
 using CustomerOrder.Domain.Entities;
 using MediatR;
+using System.Diagnostics;
+using System.Xml.Linq;
 
 
 namespace CustomerOrder.Application.Services.OrderServices.Commands.CreateOrder
@@ -53,16 +55,17 @@ namespace CustomerOrder.Application.Services.OrderServices.Commands.CreateOrder
 
             foreach (var value in productQuantity)
             {
-                if (value <= 0) {
+                if (value <= 0)
+                {
                     throw new Exception("False quantity");
                 }
-        
+
             }
 
             foreach (var name in productNames)
             {
                 product = _unitOfWork.Product.GetProductByName(name);
-                if (product == null) 
+                if (product == null)
                 {
                     throw new Exception("Product with name, " + name + ".Does not exist");
                 }
@@ -71,13 +74,11 @@ namespace CustomerOrder.Application.Services.OrderServices.Commands.CreateOrder
 
             var newOrderId = Guid.NewGuid();
             float totalPrice = 0.0f;
-            List<Guid> itemsInOrderIds = new List<Guid>();
             for (int i = 0; i < products.Count; i++)
             {
-                itemsInOrderIds.Add(Guid.NewGuid());
                 var item = new Item
                 {
-                    Id = itemsInOrderIds[i],
+                    ProductId = products[i].Id,
                     Product = products[i],
                     Quantity = productQuantity[i],
                     OrderId = newOrderId
@@ -86,19 +87,18 @@ namespace CustomerOrder.Application.Services.OrderServices.Commands.CreateOrder
 
                 totalPrice += productQuantity[i] * products[i].Price;
             }
+            
 
             DateTime dateTime = DateTime.Now;
             var order = new Order
             {
                 Id = newOrderId,
                 CustomerId = customer.Id,
-                ItemIds = itemsInOrderIds,
-                Quantity = productQuantity,
                 TotalCost = totalPrice,
                 OrderDate = dateTime
             };
             _unitOfWork.Order.Add(order);
-
+            await _unitOfWork.Commit();
 
             List<float> prices = products.Select(product => product.Price).ToList();
             return new CreateOrderResult("Successfully created Order", command.ProductNames, command.ItemQuantity, prices, dateTime, totalPrice);

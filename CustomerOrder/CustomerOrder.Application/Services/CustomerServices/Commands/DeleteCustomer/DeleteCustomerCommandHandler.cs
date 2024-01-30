@@ -18,6 +18,7 @@ namespace CustomerOrder.Application.Services.CustomerServices.Commands.DeleteCus
             }
 
             _unitOfWork.Customer.Delete(customer.Id);
+            await _unitOfWork.Commit();
 
             return new DeleteCustomerResult("Customer Deletion was Successful.", command.Email);
         }

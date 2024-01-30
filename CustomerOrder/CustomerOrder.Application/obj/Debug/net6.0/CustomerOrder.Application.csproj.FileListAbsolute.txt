@@ -13,3 +13,5 @@ C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\Custome
 C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Application\obj\Debug\net6.0\refint\CustomerOrder.Application.dll
 C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Application\obj\Debug\net6.0\CustomerOrder.Application.pdb
 C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Application\obj\Debug\net6.0\ref\CustomerOrder.Application.dll
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Application\bin\Debug\net6.0\CustomerOrder.Application.runtimeconfig.json
+C:\Users\leonardo.cohen\Desktop\training\CustomerOrdersApi\CustomerOrder\CustomerOrder.Application\obj\Debug\net6.0\CustomerOrder.Application.genruntimeconfig.cache
