@@ -1,6 +1,6 @@
 # Customer-Order-Rest-Api
 
-A Rest API That implements Customer & Order CRUD functionalities. This project is written in C# 10 and .NET 6. I have used Clean Architecture & Domain Driven Design. I have also applied Entity Framework,Repository Pattern and Unit Of Work Pattern and CIQR pattern.
+A Rest API That implements Customer & Order CRUD functionalities. This project is written in C# 10 and .NET 6. I have used Clean Architecture & Domain Driven Design. I have also applied Entity Framework,Repository Pattern and Unit Of Work Pattern and CQRS pattern.
 
 ![ca](CleanArchitecture.png)
 
