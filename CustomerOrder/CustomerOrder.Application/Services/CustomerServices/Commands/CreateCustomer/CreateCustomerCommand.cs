@@ -4,6 +4,7 @@ using MediatR;
 namespace CustomerOrder.Application.Services.CustomerServices.Commands.CreateCustomer
 {
     public record CreateCustomerCommand(
+      string Username,
       string FirstName,
       string LastName,
       string Email,

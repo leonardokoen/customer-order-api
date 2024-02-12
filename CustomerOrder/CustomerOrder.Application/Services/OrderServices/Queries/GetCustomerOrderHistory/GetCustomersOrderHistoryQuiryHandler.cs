@@ -14,7 +14,7 @@ namespace CustomerOrder.Application.Services.OrderServices.Queries.GetCustomerOr
 
         public async Task<GetCustomerOrderHistoryResult> Handle(GetCustomersOrderHistoryQuiry request, CancellationToken cancellationToken)
         {
-            var customer = _unitOfWork.Customer.GetCustomerByEmail(request.Email);
+            var customer = _unitOfWork.Customer.GetCustomerById(request.CustomerId);
             var orders = _unitOfWork.Order.GetAll();
             var filteredOrders = orders
                 .Where(order => order.CustomerId == customer.Id)
@@ -48,7 +48,7 @@ namespace CustomerOrder.Application.Services.OrderServices.Queries.GetCustomerOr
                 orderResults.Add(orderResult);
             }
 
-            return new GetCustomerOrderHistoryResult(orderResults); 
+            return new GetCustomerOrderHistoryResult("Retrieved Customer Order History Succesfully.",orderResults); 
         }
     }
 }

@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CustomerOrder.Contracts.Common;
 
 namespace CustomerOrder.Contracts.Customer.Responses
 {
     public record DeleteCustomerResponse(
-        string Message,
-        string Email
-     );
+        string Message
+     ) : IResponse;
 }

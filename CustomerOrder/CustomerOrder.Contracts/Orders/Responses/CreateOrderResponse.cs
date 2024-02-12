@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CustomerOrder.Contracts.Common;
 
 namespace CustomerOrder.Contracts.Orders.Responses
 {
     public record CreateOrderResponse(
-        string message,
+        string Message,
         List<string> ProductNames,
         List<int> ItemQuantity,
         List<float> ItemCost,
         DateTime DateOrder,
-        float total_value
- );
+        float TotalValue
+ ) : IResponse;
 }

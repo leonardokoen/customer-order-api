@@ -4,7 +4,6 @@ using MediatR;
 namespace CustomerOrder.Application.Services.CustomerServices.Commands.DeleteCustomer
 {
     public record DeleteCustomerCommand(
-      string Email,
-      string Password
+      Guid CustomerId
    ) : IRequest<DeleteCustomerResult>;
 }

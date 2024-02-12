@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CustomerOrder.Application.Common.Interfaces;
+
 
 namespace CustomerOrder.Application.Services.OrderServices.Common
 {
@@ -20,6 +17,8 @@ namespace CustomerOrder.Application.Services.OrderServices.Common
         public DateTime OrderDate { get; set; }
     }
     public record GetCustomerOrderHistoryResult(
-    List<OrderResult> OrderResults
-);
+
+        string Message,
+        List<OrderResult> OrderResults
+    ): IResult;
 }

@@ -14,9 +14,19 @@ namespace CustomerOrder.Infrastructure.CustomerInfrastructure
             return _dbContext.Set<Customer>();
         }
 
+        public Customer? GetCustomerById(Guid customerid) 
+        {
+            return _dbContext.Set<Customer>().FirstOrDefault(id => id.Id == customerid);
+        }
+
         public Customer? GetCustomerByEmail(string email)
         {
             return _dbContext.Set<Customer>().FirstOrDefault(e => e.Email == email);
+        }
+
+        public Customer? GetCustomerByUsername(string username)
+        {
+            return _dbContext.Set<Customer>().FirstOrDefault(usrnm => usrnm.Username == username);
         }
     }
 }

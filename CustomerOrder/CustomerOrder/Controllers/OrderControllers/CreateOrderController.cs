@@ -2,12 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using CustomerOrder.Contracts.Orders.Responses;
 using MediatR;
-using CustomerOrder.Application.Services.CustomerServices.Commands.CreateCustomer;
-using CustomerOrder.Application.Services.CustomerServices.Common;
-using CustomerOrder.Contracts.Customer.Responses;
-using CustomerOrder.Contracts.Customer;
 using CustomerOrder.Application.Services.OrderServices.Commands.CreateOrder;
 using CustomerOrder.Application.Services.OrderServices.Common;
+using MapsterMapper;
 
 namespace CustomerOrder.Api.Controllers.OrderServices
 {
@@ -17,18 +14,20 @@ namespace CustomerOrder.Api.Controllers.OrderServices
     {
 
         private readonly ISender _mediator;
+        private readonly IMapper _mapper;
 
-        public CreateOrderController(ISender mediator)
+        public CreateOrderController(ISender mediator, IMapper mapper)
         {
             _mediator = mediator;
+            _mapper = mapper;
         }
 
         [HttpPost("CreateOrder")] 
         public async Task<IActionResult> CreateOrder(CreateOrderRequest request)
         {
-            var command = new CreateOrderCommand(request.Email, request.ProductNames, request.ItemQuantity);
+            var command = _mapper.Map<CreateOrderCommand>(request);
             CreateOrderResult createOrderResult = await _mediator.Send(command);
-            var response = new CreateOrderResponse(createOrderResult.message, createOrderResult.ProductNames, createOrderResult.ItemQuantity,createOrderResult.ItemCost,createOrderResult.DateOrder, createOrderResult.total_value);
+            var response = _mapper.Map<CreateOrderResponse>(createOrderResult);
             return Ok(response);
         }
     }

@@ -3,6 +3,7 @@ using CustomerOrder.Application.Services.ProductServices.Commands;
 using CustomerOrder.Application.Services.ProductServices.Common;
 using CustomerOrder.Contracts.Products.Requests;
 using CustomerOrder.Contracts.Products.Responses;
+using MapsterMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,18 +15,20 @@ namespace CustomerOrder.Api.Controllers.ProductController
     {
 
         private readonly ISender _mediator;
+        private readonly IMapper _mapper;
 
-        public CreateProductController(ISender mediator)
+        public CreateProductController(ISender mediator, IMapper mapper)
         {
             _mediator = mediator;
+            _mapper = mapper;
         }
 
         [HttpPost("CreateProduct")]
         public async Task<IActionResult> CreateProduct(CreateProductRequest request)
         {
-            var command = new CreateProductCommand(request.ProductNames, request.Prices);
+            var command = _mapper.Map<CreateProductCommand>(request);
             CreateProductResult createProductResult = await _mediator.Send(command);
-            var response = new CreateProductResponse(createProductResult.message);
+            var response = _mapper.Map<CreateProductResponse>(createProductResult);
             return Ok(response);
         }
     }

@@ -5,6 +5,6 @@ namespace CustomerOrder.Application.Services.OrderServices.Queries.GetCustomerOr
 {
     public record GetCustomersOrderHistoryQuiry
     (
-        string Email
+        Guid CustomerId
     ) : IRequest<GetCustomerOrderHistoryResult>;
 }

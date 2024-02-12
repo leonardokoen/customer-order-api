@@ -2,6 +2,7 @@
 using CustomerOrder.Application.Services.CustomerServices.Common;
 using CustomerOrder.Contracts.Customer;
 using CustomerOrder.Contracts.Customer.Responses;
+using MapsterMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,19 +15,20 @@ namespace CustomerOrder.Api.Controllers.Customer
 
 
         private readonly ISender _mediator;
-
-        public CreateCustomerController(ISender mediator)
+        private readonly IMapper _mapper;
+        public CreateCustomerController(ISender mediator, IMapper mapper)
         {
             _mediator = mediator;
+            _mapper = mapper;
         }
 
 
         [HttpPost("CreateCustomer")]
         public async Task<IActionResult> CreateCustomer(CreateCustomerRequest request)
         {
-            var command = new CreateCustomerCommand(request.FirstName, request.LastName, request.Email, request.Password, request.Address, request.PostalCode);
+            var command = _mapper.Map<CreateCustomerCommand>(request);
             CreateCustomerResult createCustomerResult = await _mediator.Send(command);
-            var response = new CreateCustomerResponse(createCustomerResult.Message, createCustomerResult.FirstName, createCustomerResult.LastName, createCustomerResult.Email);
+            var response = _mapper.Map<CreateCustomerResponse>(createCustomerResult);
             return Ok(response);
         }
     }

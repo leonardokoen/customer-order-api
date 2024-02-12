@@ -2,8 +2,6 @@
 using CustomerOrder.Application.Services.OrderServices.Common;
 using CustomerOrder.Domain.Entities;
 using MediatR;
-using System.Diagnostics;
-using System.Xml.Linq;
 
 
 namespace CustomerOrder.Application.Services.OrderServices.Commands.CreateOrder
@@ -47,7 +45,7 @@ namespace CustomerOrder.Application.Services.OrderServices.Commands.CreateOrder
             List<Product> products = new List<Product>();
             Product? product = null;
 
-            Customer? customer = _unitOfWork.Customer.GetCustomerByEmail(command.Email);
+            Customer? customer = _unitOfWork.Customer.GetCustomerById(command.CustomerId);
             if (customer == null)
             {
                 throw new Exception("Customer does not exist");

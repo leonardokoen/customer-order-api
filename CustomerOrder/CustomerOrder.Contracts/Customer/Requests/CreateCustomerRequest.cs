@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CustomerOrder.Contracts.Customer
+﻿namespace CustomerOrder.Contracts.Customer
 {
     public record CreateCustomerRequest(
+        string Username,
         string FirstName,
         string LastName,
         string Email,

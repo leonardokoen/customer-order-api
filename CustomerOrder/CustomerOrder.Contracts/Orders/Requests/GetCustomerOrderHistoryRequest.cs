@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CustomerOrder.Contracts.Orders.Requests
 {
     public record GetCustomerOrderHistoryRequest(
-        string Email
+        Guid CustomerId
     );
     
 }

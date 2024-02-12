@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace CustomerOrder.Contracts.Customer.Requests
 {
     public record UpdateCustomerRequest(
-        string PreviousEmail,
+        Guid CustomerId,
+        string Username,
         string FirstName,
         string LastName,
         string Email,

@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "HKn3z2Ck8Gf7AUBNroYt8JmMT4EBrIJcCJ3Cv9Qx+AYQPma3hqum46GAI4V2yimO5DDig3G0R4b55SCFTCl45w==",
+  "dgSpecHash": "hpnC68Ev+iC/wWmY50s285TlQVeozp95tNvYL2Tbs3u3y1jqwVG4qXYyBlEvbwo20sjzC3xZ2jQx+dxVCi4foA==",
   "success": true,
   "projectFilePath": "C:\\Users\\leonardo.cohen\\Desktop\\training\\CustomerOrdersApi\\CustomerOrder\\CustomerOrder\\CustomerOrder.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leonardo.cohen\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\leonardo.cohen\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\leonardo.cohen\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\leonardo.cohen\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
+    "C:\\Users\\leonardo.cohen\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",
+    "C:\\Users\\leonardo.cohen\\.nuget\\packages\\mapster.dependencyinjection\\1.0.1\\mapster.dependencyinjection.1.0.1.nupkg.sha512",
     "C:\\Users\\leonardo.cohen\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\leonardo.cohen\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\leonardo.cohen\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

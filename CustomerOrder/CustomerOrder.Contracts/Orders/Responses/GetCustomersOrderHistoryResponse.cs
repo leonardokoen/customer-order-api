@@ -1,6 +1,4 @@
-﻿
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using CustomerOrder.Contracts.Common;
 
 namespace CustomerOrder.Contracts.Orders.Responses
 {
@@ -20,6 +18,7 @@ namespace CustomerOrder.Contracts.Orders.Responses
 
     public record GetCustomersOrderHistoryResponse(
 
+        string Message,
         List<OrderResponse> OrderResponses
-    );
+    ) : IResponse;
 }

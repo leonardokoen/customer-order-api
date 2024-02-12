@@ -15,8 +15,11 @@ namespace CustomerOrder.Application.Services.CustomerServices.Commands.CreateCus
         {
             if (_unitOfWork.Customer.GetCustomerByEmail(command.Email) == null)
             {
+                Guid customerId = Guid.NewGuid();
                 var customer = new Customer
                 {
+                    Id = customerId,
+                    Username = command.Username,
                     Name = command.FirstName + " " + command.LastName,
                     Email = command.Email,
                     Password = command.Password,
@@ -26,7 +29,7 @@ namespace CustomerOrder.Application.Services.CustomerServices.Commands.CreateCus
 
                 _unitOfWork.Customer.Add(customer);
                 await _unitOfWork.Commit();
-                return new CreateCustomerResult("Customer Creation was Succesful.", command.FirstName, command.LastName, command.Email);
+                return new CreateCustomerResult("Customer Creation was Succesful.", customerId);
             }
 
             throw new Exception("User with given email already exists");

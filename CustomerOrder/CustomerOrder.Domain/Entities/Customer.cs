@@ -6,6 +6,8 @@ namespace CustomerOrder.Domain.Entities
     {
         [Key]
         public Guid Id { get; set; } = Guid.NewGuid();
+        [Required]
+        public string Username { get; set; } = null!;
         public string Name { get; set; } = null!;
         [Required]
         public string Email { get; set; } = null!;
