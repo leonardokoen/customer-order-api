@@ -27,14 +27,9 @@ namespace CustomerOrder.Api.Controllers.ProductController
         {
             var command = _mapper.Map<GetCustomersOrderHistoryQuiry>(request);
             GetCustomerOrderHistoryResult createProductResult = await _mediator.Send(command);
-            
-            List<OrderResponse> orderResponse = new List<OrderResponse>();
-            for (var i = 0 ; i < createProductResult.OrderResults.Count; i++) {
-                var order = _mapper.Map<OrderResponse>(createProductResult.OrderResults[i]);
-                orderResponse.Add(order);
-            }
+            List<OrderResponse> orderResponse = _mapper.Map<List<OrderResponse>>(createProductResult.OrderResults);
+            var response = _mapper.Map<GetCustomersOrderHistoryResponse>((createProductResult, orderResponse));
 
-            var response = new GetCustomersOrderHistoryResponse(createProductResult.Message,orderResponse);
             return Ok(response);
         }
     }
