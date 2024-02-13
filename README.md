@@ -18,6 +18,8 @@ public class Customer
 {
     [Key]
     public Guid Id { get; set; } = Guid.NewGuid();
+    [Required]
+    public string Username {get; set;} = null!;
     public string Name { get; set; } = null!;
     [Required]
     public string Email { get; set; } = null!;
@@ -84,6 +86,7 @@ By building and running the project, swagger will pop up. All the endpoints are 
     Example Request:
     ```JSON
     {
+        "username": "alsmi",
         "firstName": "Alice",
         "lastName": "Smith",
         "email": "alice.smith@example.com",
@@ -98,12 +101,12 @@ By building and running the project, swagger will pop up. All the endpoints are 
     Example Request:
     ```JSON
     {
-        "previousEmail": "alice.smith@example.com",
-        "firstName": "Alice",
+        "customerId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "firstName": "",
         "lastName": "Doe",
         "email": "alice.doe@example.com",
-        "password": "NewPass123",
-        "address": "123 Oak St",
+        "password": "",
+        "address": "",
         "postalCode": "54321"
     }
     ```
@@ -113,8 +116,7 @@ By building and running the project, swagger will pop up. All the endpoints are 
     Example Request:
     ```JSON
     {
-        "email": "alice.doe@example.com",
-        "password": "NewPass123"
+        "customerId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
     }
     ```
 
@@ -123,7 +125,7 @@ By building and running the project, swagger will pop up. All the endpoints are 
     Example Request:
     ```JSON
     {
-        "email": "alice.doe@example.com",
+        "customerId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
         "productNames": ["banana", "apple", "cherry"],
         "itemQuantity": [3, 2, 1]
     }
@@ -158,7 +160,7 @@ By building and running the project, swagger will pop up. All the endpoints are 
     Example Request
     ```JSON
     {
-        "email": "alice.doe@example.com"
+        "customerId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
     }
     ```
 
